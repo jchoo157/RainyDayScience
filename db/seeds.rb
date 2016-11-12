@@ -69,7 +69,7 @@ Material.create({
   })
 
 Comment.create({
-  stylegi:'text',
+  style:'text',
   body:'This experiment was awesome!',
   experiment_id: Experiment.find_by(name: 'test')
   })
