@@ -9,7 +9,7 @@ Experiment.create({
   rating:3.7,
   discipline:'Magnetism',
   picture:'www.imperial.ac.uk/ImageCropToolT4/imageTool/uploaded-images/shutterstock_292800188--tojpeg_1436282518366_x2.jpg',
-  time:'1 hour'
+  time: 1
 })
 
 Experiment.create({
@@ -19,7 +19,7 @@ Experiment.create({
   rating:3.7,
   discipline:'Biology',
   picture:'www.imperial.ac.uk/ImageCropToolT4/imageTool/uploaded-images/shutterstock_292800188--tojpeg_1436282518366_x2.jpg',
-  time:'3 hours'
+  time:3.5
 })
 
 Experiment.create({
@@ -29,7 +29,7 @@ Experiment.create({
   rating:3.7,
   discipline:'Physics',
   picture:'www.imperial.ac.uk/ImageCropToolT4/imageTool/uploaded-images/shutterstock_292800188--tojpeg_1436282518366_x2.jpg',
-  time:'2 hour'
+  time: 2.25
 })
 
 Material.create({
