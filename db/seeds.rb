@@ -1,7 +1,90 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+Experiment.destroy_all
+Material.destroy_all
+Comment.destroy_all
+
+Experiment.create({
+  name:'test',
+  procedure:'1. do this, 2. do that, 3. celebrate',
+  video_url:'https://www.youtube.com/watch?v=IuSmIKVD0yE' ,
+  rating:3.7,
+  discipline:'Magnetism',
+  picture:'www.imperial.ac.uk/ImageCropToolT4/imageTool/uploaded-images/shutterstock_292800188--tojpeg_1436282518366_x2.jpg',
+  time:'1 hour'
+})
+
+Experiment.create({
+  name:'another test',
+  procedure:'1. do this, 2. do that, 3. celebrate',
+  video_url:'https://www.youtube.com/watch?v=IuSmIKVD0yE' ,
+  rating:3.7,
+  discipline:'Biology',
+  picture:'www.imperial.ac.uk/ImageCropToolT4/imageTool/uploaded-images/shutterstock_292800188--tojpeg_1436282518366_x2.jpg',
+  time:'3 hours'
+})
+
+Experiment.create({
+  name:'yet another test',
+  procedure:'1. do this, 2. do that, 3. celebrate',
+  video_url:'https://www.youtube.com/watch?v=IuSmIKVD0yE' ,
+  rating:3.7,
+  discipline:'Physics',
+  picture:'www.imperial.ac.uk/ImageCropToolT4/imageTool/uploaded-images/shutterstock_292800188--tojpeg_1436282518366_x2.jpg',
+  time:'2 hour'
+})
+
+Material.create({
+  name:'paper clip',
+  info:'a clip for holding paper',
+  experiment_id: Experiment.find_by(name: 'test')
+  })
+
+Material.create({
+  name:'toilet paper roll',
+  info:'what is left over after wiping your booty',
+  experiment_id: Experiment.find_by(name: 'test')
+  })
+
+Material.create({
+  name:'baking soda',
+  info:'tastes gross',
+  experiment_id: Experiment.find_by(name: 'test')
+  })
+
+Material.create({
+  name:'paper clip',
+  info:'a clip for holding paper',
+  experiment_id: Experiment.find_by(name: 'another test')
+  })
+
+Material.create({
+  name:'toilet paper roll',
+  info:'what is left over after wiping your booty',
+  experiment_id: Experiment.find_by(name: 'yet another test')
+  })
+
+Material.create({
+  name:'baking soda',
+  info:'tastes gross',
+  experiment_id: Experiment.find_by(name: 'yet another test')
+  })
+
+Comment.create({
+  stylegi:'text',
+  body:'This experiment was awesome!',
+  experiment_id: Experiment.find_by(name: 'test')
+  })
+
+Comment.create({
+  style:'picture',
+  body:'http://www.changeovertennis.com/wp-content/uploads/2016/03/potato-03.gif',
+  experiment_id: Experiment.find_by(name: 'test')
+  })
+
+Comment.create({
+  style:'video',
+  body:'https://www.youtube.com/watch?v=oTVIi5z8WtY',
+  experiment_id: Experiment.find_by(name: 'test')
+  })
+
+
+
