@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161112223351) do
+ActiveRecord::Schema.define(version: 20161113004301) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,9 +31,13 @@ ActiveRecord::Schema.define(version: 20161112223351) do
     t.float    "rating"
     t.string   "discipline"
     t.string   "picture"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
     t.float    "time"
+    t.string   "description"
+    t.string   "explanation"
+    t.integer  "material_id"
+    t.index ["material_id"], name: "index_experiments_on_material_id", using: :btree
   end
 
   create_table "materials", force: :cascade do |t|
@@ -46,5 +50,6 @@ ActiveRecord::Schema.define(version: 20161112223351) do
   end
 
   add_foreign_key "comments", "experiments"
+  add_foreign_key "experiments", "materials"
   add_foreign_key "materials", "experiments"
 end
