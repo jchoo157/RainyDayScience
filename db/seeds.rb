@@ -7,68 +7,88 @@ Experiment.create({
   procedure:'1. Place some of the baking soda into your container.
 2. Pour in some of the vinegar
 3. Watch as the reaction takes place!',
-  video_url:'https://www.youtube.com/watch?v=IuSmIKVD0yE' ,
+  video_url:'https://www.youtube.com/watch?v=nFZhbEi19M8' ,
   rating:3.7,
-  discipline:'Magnetism',
-  picture:'www.imperial.ac.uk/ImageCropToolT4/imageTool/uploaded-images/shutterstock_292800188--tojpeg_1436282518366_x2.jpg',
-  time: 1
+  discipline:'Earth Science',
+  picture:'/experiments/bakingSodaVolcano.jpg',
+  time: 0.5,
+  description:"Use baking soda and vinegar to create an awesome chemical reaction! Watch as it rapidly fizzes over the container and make sure you've got some towels ready to clean up.",
+  explanation:'The baking soda (sodium bicarbonate) is a base while the vinegar (acetic acid) is an acid. When they react together they form carbonic acid which is very unstable, it instantly breaks apart into water and carbon dioxide, which creates all the fizzing as it escapes the solution.
+
+For extra effect you can make a realistic looking volcano. It takes some craft skills but it will make your vinegar and baking soda eruptions will look even more impressive!'
 })
+
+
+Material.create({
+  name:'Baking Soda',
+  info:'/materials/Baking_Soda-icon.png',
+  experiment_id: Experiment.find_by(name: 'Baking Soda & Vinegar Volcano').id
+  })
+
+Material.create({
+  name:'Vinegar',
+  info:'/materials/vinegar.png',
+  experiment_id: Experiment.find_by(name: 'Baking Soda & Vinegar Volcano').id
+
+  })
+
+Material.create({
+  name:'Container',
+  info:'/materials/beaker.png',
+  experiment_id: Experiment.find_by(name: 'Baking Soda & Vinegar Volcano').id
+  })
 
 Experiment.create({
-  name:'another test',
-  procedure:'1. do this, 2. do that, 3. celebrate',
-  video_url:'https://www.youtube.com/watch?v=IuSmIKVD0yE' ,
+  name:'Blowing Up Balloons With CO2',
+  procedure:'1. Before you begin, make sure that you stretch out the balloon to make it as easy as possible to inflate.
+2. Pour the 40 ml of water into the soft drink bottle.
+3. Add the teaspoon of baking soda and stir it around with the straw until it has dissolved.
+4. Pour the lemon juice in and quickly put the stretched balloon over the mouth of the bottle.',
+  video_url:'https://www.youtube.com/watch?v=WPap0yTL8Zc' ,
   rating:3.7,
-  discipline:'Biology',
-  picture:'www.imperial.ac.uk/ImageCropToolT4/imageTool/uploaded-images/shutterstock_292800188--tojpeg_1436282518366_x2.jpg',
-  time:3.5
-})
-
-Experiment.create({
-  name:'yet another test',
-  procedure:'1. do this, 2. do that, 3. celebrate',
-  video_url:'https://www.youtube.com/watch?v=IuSmIKVD0yE' ,
-  rating:3.7,
-  discipline:'Physics',
-  picture:'www.imperial.ac.uk/ImageCropToolT4/imageTool/uploaded-images/shutterstock_292800188--tojpeg_1436282518366_x2.jpg',
-  time: 2.25
+  discipline:'Chemistry',
+  picture:'/science_images/CO2Ballon.jpg',
+  time: 0.5,
+  description:"Chemical reactions make for some great experiments. Make use of the carbon dioxide given off by a baking soda and lemon juice reaction by funnelling the gas through a soft drink bottle and in to your awaiting balloon!",
+  explanation:"If all goes well then your balloon should inflate! Adding the lemon juice to the baking soda creates a chemical reaction. The baking soda is a base, while the lemon juice is an acid, when the two combine they create carbon dioxide (CO2). The gas rises up and escapes through the soft drink bottle, it doesn't however escape the balloon, pushing it outwards and blowing it up. If you don't have any lemons then you can substitute the lemon juice for vinegar."
 })
 
 Material.create({
-  name:'paper clip',
-  info:'a clip for holding paper',
-  experiment_id: Experiment.find_by(name: 'Baking Soda & Vinegar Volcano').id
+  name:'Ballon',
+  info:'/materials/ballon.png',
+  experiment_id: Experiment.find_by(name: 'Blowing Up Balloons With CO2').id
   })
 
 Material.create({
-  name:'toilet paper roll',
-  info:'what is left over after wiping your booty',
-  experiment_id: Experiment.find_by(name: 'Baking Soda & Vinegar Volcano').id
+  name:'Empty Soda Bottle',
+  info:'/materials/soda_bottle.png',
+  experiment_id: Experiment.find_by(name: 'Blowing Up Balloons With CO2').id
   })
 
 Material.create({
-  name:'baking soda',
-  info:'tastes gross',
-  experiment_id: Experiment.find_by(name: 'Baking Soda & Vinegar Volcano').id
+  name:'Drinking Straw',
+  info:'/materials/straw.png',
+  experiment_id: Experiment.find_by(name: 'Blowing Up Balloons With CO2').id
   })
 
 Material.create({
-  name:'paper clip',
-  info:'a clip for holding paper',
-  experiment_id: Experiment.find_by(name: 'another test').id
+  name:'Lemon Juice',
+  info:'/materials/lemon.png',
+  experiment_id: Experiment.find_by(name: 'Blowing Up Balloons With CO2').id
   })
 
 Material.create({
-  name:'toilet paper roll',
-  info:'what is left over after wiping your booty',
-  experiment_id: Experiment.find_by(name: 'yet another test').id
+  name:'Baking Soda',
+  info:'/materials/Baking_Soda-icon.png',
+  experiment_id: Experiment.find_by(name: 'Blowing Up Balloons With CO2').id
   })
 
 Material.create({
-  name:'baking soda',
-  info:'tastes gross',
-  experiment_id: Experiment.find_by(name: 'yet another test').id
+  name:'Water',
+  info:'/materials/water.png',
+  experiment_id: Experiment.find_by(name: 'Blowing Up Balloons With CO2').id
   })
+
 
 Comment.create({
   style:'text',
