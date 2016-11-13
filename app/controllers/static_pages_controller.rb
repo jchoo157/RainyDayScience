@@ -3,4 +3,9 @@ class StaticPagesController < ApplicationController
     @experiments = Experiment.all
     render :json => @experiments
   end
+
+  def material
+    @materials = Material.all
+    render :json => @materials
+  end
 end
