@@ -21,20 +21,20 @@ For extra effect you can make a realistic looking volcano. It takes some craft s
 
 Material.create({
   name:'Baking Soda',
-  info:'/materials/Baking_Soda-icon.png',
+  info:'http://vignette3.wikia.nocookie.net/farmville/images/e/e3/Baking_Soda-icon.png/revision/latest?cb=20130618085031',
   experiment_id: Experiment.find_by(name: 'Baking Soda & Vinegar Volcano').id
   })
 
 Material.create({
   name:'Vinegar',
-  info:'/materials/vinegar.png',
+  info:'https://d30y9cdsu7xlg0.cloudfront.net/png/73808-200.png',
   experiment_id: Experiment.find_by(name: 'Baking Soda & Vinegar Volcano').id
 
   })
 
 Material.create({
   name:'Container',
-  info:'/materials/beaker.png',
+  info:'https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Beaker_font_awesome.svg/512px-Beaker_font_awesome.svg.png',
   experiment_id: Experiment.find_by(name: 'Baking Soda & Vinegar Volcano').id
   })
 
@@ -47,7 +47,7 @@ Experiment.create({
   video_url:'https://www.youtube.com/watch?v=WPap0yTL8Zc' ,
   rating:3.7,
   discipline:'Chemistry',
-  picture:'/science_images/CO2Ballon.jpg',
+  picture:'/experiments/CO2Ballon.jpg',
   time: 0.5,
   description:"Chemical reactions make for some great experiments. Make use of the carbon dioxide given off by a baking soda and lemon juice reaction by funnelling the gas through a soft drink bottle and in to your awaiting balloon!",
   explanation:"If all goes well then your balloon should inflate! Adding the lemon juice to the baking soda creates a chemical reaction. The baking soda is a base, while the lemon juice is an acid, when the two combine they create carbon dioxide (CO2). The gas rises up and escapes through the soft drink bottle, it doesn't however escape the balloon, pushing it outwards and blowing it up. If you don't have any lemons then you can substitute the lemon juice for vinegar."
@@ -55,58 +55,103 @@ Experiment.create({
 
 Material.create({
   name:'Ballon',
-  info:'/materials/ballon.png',
+  info:'http://icons.iconarchive.com/icons/iconsmind/outline/512/Balloon-icon.png',
   experiment_id: Experiment.find_by(name: 'Blowing Up Balloons With CO2').id
   })
 
 Material.create({
   name:'Empty Soda Bottle',
-  info:'/materials/soda_bottle.png',
+  info:'https://d30y9cdsu7xlg0.cloudfront.net/png/401938-200.png',
   experiment_id: Experiment.find_by(name: 'Blowing Up Balloons With CO2').id
   })
 
 Material.create({
   name:'Drinking Straw',
-  info:'/materials/straw.png',
+  info:'https://d30y9cdsu7xlg0.cloudfront.net/png/119933-200.png',
   experiment_id: Experiment.find_by(name: 'Blowing Up Balloons With CO2').id
   })
 
 Material.create({
   name:'Lemon Juice',
-  info:'/materials/lemon.png',
+  info:'http://simpleicon.com/wp-content/uploads/lemon.png',
   experiment_id: Experiment.find_by(name: 'Blowing Up Balloons With CO2').id
   })
 
 Material.create({
   name:'Baking Soda',
-  info:'/materials/Baking_Soda-icon.png',
+  info:'http://vignette3.wikia.nocookie.net/farmville/images/e/e3/Baking_Soda-icon.png/revision/latest?cb=20130618085031',
   experiment_id: Experiment.find_by(name: 'Blowing Up Balloons With CO2').id
   })
 
 Material.create({
   name:'Water',
-  info:'/materials/water.png',
+  info:'http://www.iconsdb.com/icons/preview/caribbean-blue/water-9-xxl.png',
   experiment_id: Experiment.find_by(name: 'Blowing Up Balloons With CO2').id
   })
 
+Experiment.create({
+  name:'Make Your Own Fake Snot',
+  procedure:'1. Bring water to a boil.
+2. Fill half a cup with boiling water.
+3. Add three teaspoons of gelatin to the boiling water.
+4. Let it soften before stirring with a fork.
+5. Add a quarter of a cup of corn syrup.
+6. Stir the mixture again with your fork and look at the long strands of gunk that have formed.
+7. As the mixture cools slowly add more water, small amounts at a time.',
+  video_url:'https://www.youtube.com/watch?v=4gr8K6a_NX0' ,
+  rating:3.7,
+  discipline:'Chemistry',
+  picture:'http://kidsactivitiesblog.com/wp-content/uploads/2014/09/grossest-slime-recipe.jpg',
+  time: 0.5,
+  description:"As disgusting as it might sound to some people, let's make some fake snot! Snot actually serves an important purpose in our body so this experiment is not all about grossing out our friends, although that's certainly part of the fun.",
+  explanation:"Mucus is made mostly of sugars and protein. Although different than the ones found in the real thing, this is exactly what you used to make your fake snot. The long, fine strings you could see inside your fake snot when you moved it around are protein strands. These protein strands make snot sticky and capable of stretching."
+})
 
-Comment.create({
-  style:'text',
-  body:'This experiment was awesome!',
-  experiment_id: Experiment.find_by(name: 'Baking Soda & Vinegar Volcano').id
+Material.create({
+  name:'Water',
+  info:'http://www.iconsdb.com/icons/preview/caribbean-blue/water-9-xxl.png',
+  experiment_id: Experiment.find_by(name: 'Make Your Own Fake Snot').id
   })
 
-Comment.create({
-  style:'picture',
-  body:'http://www.changeovertennis.com/wp-content/uploads/2016/03/potato-03.gif',
-  experiment_id: Experiment.find_by(name: 'Baking Soda & Vinegar Volcano').id
+Material.create({
+  name:'Gelatin',
+  info:'http://downloadicons.net/sites/default/files/baby-milk-icon-68808.png',
+  experiment_id: Experiment.find_by(name: 'Make Your Own Fake Snot').id
   })
 
-Comment.create({
-  style:'video',
-  body:'https://www.youtube.com/watch?v=oTVIi5z8WtY',
-  experiment_id: Experiment.find_by(name: 'Baking Soda & Vinegar Volcano').id
+Material.create({
+  name:'Corn Syrup',
+  info:'https://d30y9cdsu7xlg0.cloudfront.net/png/347285-200.png',
+  experiment_id: Experiment.find_by(name: 'Make Your Own Fake Snot').id
+  })
+
+Material.create({
+  name:'Measuring Spoons',
+  info:'https://sites.google.com/a/tps501.org/mrs-thornton/_/rsrc/1451925947659/c/culinary-resources/noun_930.png',
+  experiment_id: Experiment.find_by(name: 'Make Your Own Fake Snot').id
+  })
+
+Material.create({
+  name:'Fork',
+  info:'https://d30y9cdsu7xlg0.cloudfront.net/png/203028-200.png',
+  experiment_id: Experiment.find_by(name: 'Make Your Own Fake Snot').id
   })
 
 
+# Comment.create({
+#   style:'text',
+#   body:'This experiment was awesome!',
+#   experiment_id: Experiment.find_by(name: 'Baking Soda & Vinegar Volcano').id
+#   })
 
+# Comment.create({
+#   style:'picture',
+#   body:'http://www.changeovertennis.com/wp-content/uploads/2016/03/potato-03.gif',
+#   experiment_id: Experiment.find_by(name: 'Baking Soda & Vinegar Volcano').id
+#   })
+
+# Comment.create({
+#   style:'video',
+#   body:'https://www.youtube.com/watch?v=oTVIi5z8WtY',
+#   experiment_id: Experiment.find_by(name: 'Baking Soda & Vinegar Volcano').id
+#   })
