@@ -80,7 +80,7 @@ Material.create({
 
 Material.create({
   name:'Water',
-  info:'http://www.iconsdb.com/icons/preview/caribbean-blue/water-9-xxl.png',
+  info: 'http://www.iconsdb.com/icons/preview/black/water-9-xxl.png',
   experiment_id: Experiment.find_by(name: 'Blowing Up Balloons With CO2').id
   })
 
@@ -98,7 +98,7 @@ Experiment.create({
 
 Material.create({
   name:'Water',
-  info:'http://www.iconsdb.com/icons/preview/caribbean-blue/water-9-xxl.png',
+  info:'http://www.iconsdb.com/icons/preview/black/water-9-xxl.png',
   experiment_id: Experiment.find_by(name: 'Make Your Own Fake Snot').id
   })
 
@@ -164,7 +164,7 @@ There are different types of luminescence, they include fluorescence (used in th
 
 Material.create({
   name:'Black Light',
-  info:'http://www.iconsdb.com/icons/preview/black/idea-xxl.png',
+  info:'http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/rounded-glossy-black-icons-business/086324-rounded-glossy-black-icon-business-light-off.png',
   experiment_id: Experiment.find_by(name: 'Make Glowing Water').id
   })
 
@@ -258,7 +258,7 @@ Material.create({
 Experiment.create({
   name:'Static Electricity Experiment',
   procedure:["Rub the 2 balloons one by one against the woolen fabric","try moving the balloons together, observe what happens","Rub 1 of the balloons back and forth on your hair then slowly it pull it away, ask someone nearby what they can see or if there's nobody else around try looking in a mirror.","Put the aluminum can on its side on a table, after rubbing the balloon on your hair again try to control how the can rolls using the balloon."],
-  video_url:'https://www.youtube.com/watch?v=A0b6_kg2oMc' ,
+  video_url:'https://www.youtube.com/watch?v=AA6KYYaWXe4' ,
   rating:3.7,
   discipline:'Electromagnetism',
   picture:'http://kidsactivitiesblog.com/wp-content/uploads/2012/04/QMSM1.jpg',
@@ -318,7 +318,7 @@ Material.create({
 Experiment.create({
   name:'Can you make an orange sink?',
   procedure:["Fill the bowl with water.","Put the orange in the water and watch what happens.","Peel the rind from the orange and try the experiment again, what happens this time?"],
-  video_url:'https://www.youtube.com/watch?v=isGY-_y0ONg' ,
+  video_url:'https://www.youtube.com/watch?v=SY2mqJ_QM-I' ,
   rating:3.7,
   discipline:'Physics',
   picture:'https://s-media-cache-ak0.pinimg.com/736x/b9/42/3f/b9423f7a4a05425be128ae8bcf06e801.jpg',
@@ -371,7 +371,7 @@ Material.create({
 
 Material.create({
   name:'Water',
-  info:'http://www.iconsdb.com/icons/preview/caribbean-blue/water-9-xxl.png',
+  info:'http://www.iconsdb.com/icons/preview/black/water-9-xxl.png',
   experiment_id: Experiment.find_by(name: 'Dissolving Sugar at Different Heats').id
   })
 
@@ -437,7 +437,7 @@ Material.create({
 
 Material.create({
   name:'Water',
-  info:'http://www.iconsdb.com/icons/preview/caribbean-blue/water-9-xxl.png',
+  info:'http://www.iconsdb.com/icons/preview/black/water-9-xxl.png',
   experiment_id: Experiment.find_by(name: 'Making Music with Water').id
   })
 
