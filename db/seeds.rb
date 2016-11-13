@@ -340,7 +340,7 @@ Material.create({
 Material.create({
   name:'Bucket',
   info:'https://d30y9cdsu7xlg0.cloudfront.net/png/2142-200.png',
-  experiment_id: Experiment.find_by(name: 'Does an Orange Float or Sink?').id
+  experiment_id: Experiment.find_by(name: 'Can you make an orange sink?').id
   })
 
 Experiment.create({
