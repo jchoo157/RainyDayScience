@@ -3,8 +3,10 @@ Material.destroy_all
 Comment.destroy_all
 
 Experiment.create({
-  name:'test',
-  procedure:'1. do this, 2. do that, 3. celebrate',
+  name:'Baking Soda & Vinegar Volcano',
+  procedure:'1. Place some of the baking soda into your container.
+2. Pour in some of the vinegar
+3. Watch as the reaction takes place!',
   video_url:'https://www.youtube.com/watch?v=IuSmIKVD0yE' ,
   rating:3.7,
   discipline:'Magnetism',
