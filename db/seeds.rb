@@ -218,7 +218,7 @@ Material.create({
 
 Experiment.create({
   name:'Grow Your Own Bacteria',
-  procedure:['Prepare your petrie dish of agar.','Using your cotton bud, swab a certain area of your house (i.e. collect a sample by rubbing the cotton bud on a surface of your choice).','Rub the swab over the agar with a few gentle strokes before putting the lid back on and sealing the petrie dish.','Allow the dish to sit in a warm area for 2 or 3 days.','Check the growth of the bacteria each day by making an observational drawing and describing the changes.','Try repeating the process with a new petrie dish and swab from under your finger nails or between your toes.',"Dispose of the bacteria by wrapping up the petrie dish in old newspaper and placing in the rubbish (don't open the lid)".],
+  procedure:['Prepare your petrie dish of agar.','Using your cotton bud, swab a certain area of your house (i.e. collect a sample by rubbing the cotton bud on a surface of your choice).','Rub the swab over the agar with a few gentle strokes before putting the lid back on and sealing the petrie dish.','Allow the dish to sit in a warm area for 2 or 3 days.','Check the growth of the bacteria each day by making an observational drawing and describing the changes.','Try repeating the process with a new petrie dish and swab from under your finger nails or between your toes.',"Dispose of the bacteria by wrapping up the petrie dish in old newspaper and placing in the rubbish (don't open the lid)"],
   video_url:'https://www.youtube.com/watch?v=A0b6_kg2oMc' ,
   rating:3.7,
   discipline:'Biology',
