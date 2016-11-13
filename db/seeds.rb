@@ -10,7 +10,7 @@ Experiment.create({
   video_url:'https://www.youtube.com/watch?v=nFZhbEi19M8' ,
   rating:3.7,
   discipline:'Earth Science',
-  picture:'/experiments/bakingSodaVolcano.jpg',
+  picture:'http://2.bp.blogspot.com/-CNVXv5HHjpk/Ue3iavidp6I/AAAAAAAACRw/BjjbcqkKmfE/s1600/IMG_8162.JPG',
   time: 0.5,
   description:"Use baking soda and vinegar to create an awesome chemical reaction! Watch as it rapidly fizzes over the container and make sure you've got some towels ready to clean up.",
   explanation:'The baking soda (sodium bicarbonate) is a base while the vinegar (acetic acid) is an acid. When they react together they form carbonic acid which is very unstable, it instantly breaks apart into water and carbon dioxide, which creates all the fizzing as it escapes the solution.
@@ -47,7 +47,7 @@ Experiment.create({
   video_url:'https://www.youtube.com/watch?v=WPap0yTL8Zc' ,
   rating:3.7,
   discipline:'Chemistry',
-  picture:'/experiments/CO2Ballon.jpg',
+  picture:'http://nifymag.com/wp-content/uploads/2015/05/192.jpg',
   time: 0.5,
   description:"Chemical reactions make for some great experiments. Make use of the carbon dioxide given off by a baking soda and lemon juice reaction by funnelling the gas through a soft drink bottle and in to your awaiting balloon!",
   explanation:"If all goes well then your balloon should inflate! Adding the lemon juice to the baking soda creates a chemical reaction. The baking soda is a base, while the lemon juice is an acid, when the two combine they create carbon dioxide (CO2). The gas rises up and escapes through the soft drink bottle, it doesn't however escape the balloon, pushing it outwards and blowing it up. If you don't have any lemons then you can substitute the lemon juice for vinegar."
@@ -137,7 +137,26 @@ Material.create({
   experiment_id: Experiment.find_by(name: 'Make Your Own Fake Snot').id
   })
 
+Experiment.create({
+  name:'Raw or Boiled Egg?',
+  procedure:'1. Spin the eggs and watch what happens, one egg should spin while the other wobbles.
+2. You can also lightly touch each of the eggs while they are spinning, one should stop quickly while the other keeps moving after you have touched it.',
+  video_url:'https://www.youtube.com/watch?v=r1ygKQbcqh4' ,
+  rating:3.7,
+  discipline:'Physics',
+  picture:'http://kidsactivitiesblog.com/wp-content/uploads/2013/02/Egg-Experiment-Raw-or-Boiled.jpg',
+  time: 0.5,
+  description:"Surprise your friends and family with an easy science experiment that answers an otherwise tricky question. Two eggs look and feel the same but there is a big difference, one is raw and the other hard boiled, find out which is which with this fun experiment.",
+  explanation:"The raw egg's centre of gravity changes as the white and yolk move around inside the shell, causing the wobbling motion. Even after you touch the shell it continues moving. This is because of inertia, the same type of force you feel when you change direction or stop suddenly in a car, your body wants to move one way while the car wants to do something different. Inertia causes the raw egg to spin even after you have stopped it, this contrasts with the solid white and yolk of the hard boiled egg, it responds much quicker if you touch it.
 
+This is a good experiment to test a friend or someone in your family with, see if they can figure out how to tell the difference between the eggs (without smashing them of course) before showing them your nifty trick."
+})
+
+Material.create({
+  name:'Eggs',
+  info:'http://www.iconsfind.com/wp-content/uploads/2013/11/Kitchen-Eggs-icon.png',
+  experiment_id: Experiment.find_by(name: 'Raw or Boiled Egg?').id
+  })
 # Comment.create({
 #   style:'text',
 #   body:'This experiment was awesome!',
