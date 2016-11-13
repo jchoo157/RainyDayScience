@@ -440,6 +440,42 @@ Material.create({
   info:'http://www.iconsdb.com/icons/preview/caribbean-blue/water-9-xxl.png',
   experiment_id: Experiment.find_by(name: 'Making Music with Water').id
   })
+
+Experiment.create({
+  name:'Water Molecules on the Move',
+  procedure:['Fill the glasses with the same amount of water.','Heat one of the glasses in the microwave.','Put one drop of food coloring into both glasses as quickly as possible.','Watch what happens to the food coloring.'],
+  video_url:'https://www.youtube.com/watch?v=tEtcSwHrkaQ' ,
+  rating:3.7,
+  discipline:'Chemistry',
+  picture:'http://www.creativeplayadventures.com/wp-content/uploads/2012/12/IMG_4672.jpg',
+  time: 0.5,
+  description:"This experiment is great for testing if hot water molecules really move faster than cold ones. Pour some water, drop in some food coloring and compare results.",
+  explanation:"If you watch closely you will notice that the food coloring spreads faster throughout the hot water than in the cold. The molecules in the hot water move at a faster rate, spreading the food coloring faster than the cold water molecules which mover slower."
+})
+
+Material.create({
+  name:'Eyedropper',
+  info:'https://d30y9cdsu7xlg0.cloudfront.net/png/425-200.png',
+  experiment_id: Experiment.find_by(name: 'Water Molecules on the Move').id
+  })
+
+Material.create({
+  name:'Eyedropper',
+  info:'https://d30y9cdsu7xlg0.cloudfront.net/png/425-200.png',
+  experiment_id: Experiment.find_by(name: 'Water Molecules on the Move').id
+  })
+
+Material.create({
+  name:'Drinking Glass',
+  info:'https://d30y9cdsu7xlg0.cloudfront.net/png/59406-200.png',
+  experiment_id: Experiment.find_by(name: 'Water Molecules on the Move').id
+  })
+
+Material.create({
+  name:'Food Coloring',
+  info:'https://maxcdn.icons8.com/Share/icon/Healthcare//vaccine_drop1600.png',
+  experiment_id: Experiment.find_by(name: 'Water Molecules on the Move').id
+  })
 # Comment.create({
 #   style:'text',
 #   body:'This experiment was awesome!',
