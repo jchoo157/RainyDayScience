@@ -35,55 +35,55 @@ Experiment.create({
 Material.create({
   name:'paper clip',
   info:'a clip for holding paper',
-  experiment_id: Experiment.find_by(name: 'test')
+  experiment_id: Experiment.find_by(name: 'test').id
   })
 
 Material.create({
   name:'toilet paper roll',
   info:'what is left over after wiping your booty',
-  experiment_id: Experiment.find_by(name: 'test')
+  experiment_id: Experiment.find_by(name: 'test').id
   })
 
 Material.create({
   name:'baking soda',
   info:'tastes gross',
-  experiment_id: Experiment.find_by(name: 'test')
+  experiment_id: Experiment.find_by(name: 'test').id
   })
 
 Material.create({
   name:'paper clip',
   info:'a clip for holding paper',
-  experiment_id: Experiment.find_by(name: 'another test')
+  experiment_id: Experiment.find_by(name: 'another test').id
   })
 
 Material.create({
   name:'toilet paper roll',
   info:'what is left over after wiping your booty',
-  experiment_id: Experiment.find_by(name: 'yet another test')
+  experiment_id: Experiment.find_by(name: 'yet another test').id
   })
 
 Material.create({
   name:'baking soda',
   info:'tastes gross',
-  experiment_id: Experiment.find_by(name: 'yet another test')
+  experiment_id: Experiment.find_by(name: 'yet another test').id
   })
 
 Comment.create({
   style:'text',
   body:'This experiment was awesome!',
-  experiment_id: Experiment.find_by(name: 'test')
+  experiment_id: Experiment.find_by(name: 'test').id
   })
 
 Comment.create({
   style:'picture',
   body:'http://www.changeovertennis.com/wp-content/uploads/2016/03/potato-03.gif',
-  experiment_id: Experiment.find_by(name: 'test')
+  experiment_id: Experiment.find_by(name: 'test').id
   })
 
 Comment.create({
   style:'video',
   body:'https://www.youtube.com/watch?v=oTVIi5z8WtY',
-  experiment_id: Experiment.find_by(name: 'test')
+  experiment_id: Experiment.find_by(name: 'test').id
   })
 
 

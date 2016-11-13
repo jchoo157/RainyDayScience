@@ -1,3 +1,3 @@
 class Material < ApplicationRecord
-  belongs_to :experiment
+  has_many :experiments
 end
