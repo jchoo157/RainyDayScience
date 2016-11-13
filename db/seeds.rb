@@ -288,6 +288,158 @@ Material.create({
   info:'http://thewoollyempire.co.uk/communities/5/000/001/514/425//images/6299103.png',
   experiment_id: Experiment.find_by(name: 'Static Electricity Experiment').id
   })
+
+Experiment.create({
+  name:'Use a Straw to Stab a Potato',
+  procedure:["Hold a plastic drinking straw by it sides (without covering the hole at the top) and try quickly stabbing the potato, what happens?","Repeat the experiment with a new straw but this time place your thumb over the top, covering the hole."],
+  video_url:'https://www.youtube.com/watch?v=isGY-_y0ONg' ,
+  rating:3.7,
+  discipline:'Physics',
+  picture:'http://www.abc.net.au/reslib/201007/r605751_3970557.jpg',
+  time: 0.5,
+  description:"Is it possible to stab a potato with a drinking straw? Find out with this fun science experiment for kids that shows how air pressure can be used in surprising ways.",
+  explanation:"Placing your thumb over the hole at the top of the straw improves your ability to pierce the potato skin and push the straw deep into the potato. The first time you tried the experiment you may have only pierced the potato a small amount, so why are you more successful on the second attempt?
+
+Covering the top of the straw with your thumb traps the air inside, forcing it to compress as you stab the straw through the potato skin. This makes the straw strong enough to pierce the potato, unlike the first attempt where the air is pushed out of the straw."
+})
+
+Material.create({
+  name:'Potato',
+  info:'https://maxcdn.icons8.com/iOS7/PNG/512/Plants/potato-512.png',
+  experiment_id: Experiment.find_by(name: 'Use a Straw to Stab a Potato').id
+  })
+
+Material.create({
+  name:'Drinking Straw',
+  info:'https://d30y9cdsu7xlg0.cloudfront.net/png/119933-200.png',
+  experiment_id: Experiment.find_by(name: 'Use a Straw to Stab a Potato').id
+  })
+
+Experiment.create({
+  name:'Can you make an orange sink?',
+  procedure:["Fill the bowl with water.","Put the orange in the water and watch what happens.","Peel the rind from the orange and try the experiment again, what happens this time?"],
+  video_url:'https://www.youtube.com/watch?v=isGY-_y0ONg' ,
+  rating:3.7,
+  discipline:'Physics',
+  picture:'https://s-media-cache-ak0.pinimg.com/736x/b9/42/3f/b9423f7a4a05425be128ae8bcf06e801.jpg',
+  time: 0.5,
+  description:"Does an orange float or sink when placed in water? Seems like a fairly straight forward question, but is it? Give this fun density science experiment for kids a try and answer the question while learning a unique characteristic of oranges.",
+  explanation:"The first time you put the orange in the bowl of water it probably floated on the surface, after you removed the rind however, it probably sunk to the bottom, why?
+
+The rind of an orange is full of tiny air pockets which help give it a lower density than water, making it float to the surface. Removing the rind (and all the air pockets) from the orange increases its density higher than that of water, making it sink.
+
+Density is the mass of an object relative to its volume. Objects with a lot of matter in a certain volume have a high density, while objects with a small amount of matter in the same volume have a low density."
+})
+
+Material.create({
+  name:'Orange',
+  info:'http://colouringbook.org/SVG/2011/December/CHOVYNZ/chovynz_orange_icon_black_white_line_art_scalable_vector_graphics_svg_inkscape_adobe_illustrator_clip_art_clipart_coloring_book_colouring-2555px.png',
+  experiment_id: Experiment.find_by(name: 'Can you make an orange sink?').id
+  })
+
+Material.create({
+  name:'Bucket',
+  info:'https://d30y9cdsu7xlg0.cloudfront.net/png/2142-200.png',
+  experiment_id: Experiment.find_by(name: 'Does an Orange Float or Sink?').id
+  })
+
+Experiment.create({
+  name:'Dissolving Sugar at Different Heats',
+  procedure:["Fill 2 glasses with an equal amount of water.","Put 1 glass in the microwave for 30 seconds","Put a sugar cube into the cold water and stir with the spoon until the sugar disappears.","Repeat this process (remembering to count the amount of sugar cubes you put into the water) until you see sugar starts to gather on the bottom of the glass.","Write down how many sugar cubes you could dissolve in the cold water.","Repeat the same process for the hot water.","Compare the number of sugar cubes dissolved in each liquid, which dissolved more?"],
+  video_url:'https://www.youtube.com/watch?v=ZgI_dd1gV_Q&list=PLFAmoleIsDjNAsnaUant0L-tmy5-1bJDt' ,
+  rating:3.7,
+  discipline:'Chemistry',
+  picture:'http://www.sugarfacts.org/images/dissolving_sugar.jpg',
+  time: 0.5,
+  description:"Learn about solutions as you add more and more sugar cubes to different temperature water. This easy experiment shows that you can only dissolve a certain amount and that this changes as the water gets hotter.",
+  explanation:"The cold water isn't able to dissolve as much sugar as the hot water, but why? Another name for the liquids inside the cups is a 'solution', when this solution can no longer dissolve sugar it becomes a 'saturated solution', this means that sugar starts forming on the bottom of the cup.
+
+The reason the hot water dissolves more is because it has faster moving molecules which are spread further apart than the molecules in the cold water. With bigger gaps between the molecules in the hot water, more sugar molecules can fit in between."
+})
+
+Material.create({
+  name:'Sugar Cubes',
+  info:'https://d30y9cdsu7xlg0.cloudfront.net/png/155432-200.png',
+  experiment_id: Experiment.find_by(name: 'Dissolving Sugar at Different Heats').id
+  })
+
+Material.create({
+  name:'Drinking Glass',
+  info:'https://d30y9cdsu7xlg0.cloudfront.net/png/59406-200.png',
+  experiment_id: Experiment.find_by(name: 'Dissolving Sugar at Different Heats').id
+  })
+
+Material.create({
+  name:'Water',
+  info:'http://www.iconsdb.com/icons/preview/caribbean-blue/water-9-xxl.png',
+  experiment_id: Experiment.find_by(name: 'Dissolving Sugar at Different Heats').id
+  })
+
+Experiment.create({
+  name:'What Absorbs More Heat?',
+  procedure:["Wrap the white paper around one of the glasses using a rubber band to hold it on.","Do the same with the black paper and the other glass.","Fill the glasses with the exact same amount of water.","Leave the glasses out in the sun for a couple of hours before returning to measure the temperature of the water in each."],
+  video_url:'https://www.youtube.com/watch?v=OzuiC52ecI4' ,
+  rating:3.7,
+  discipline:'Chemistry',
+  picture:'http://www.all-science-fair-projects.com/webroot/resource_cache/652b52e58a7fc77ec75c32c78e544a6a/2b431bfa398b08efcaaa3d2dc3e0dc02/7b3dbd880785f29347ad61930e0c95d5',
+  time: 0.5,
+  description:"When you're out in the sun on a hot summers day it pays to wear some light colored clothes, but why is that? Experiment with light, color, heat and some water to find out.",
+  explanation:"Dark surfaces such as the black paper absorb more light and heat than the lighter ones such as the white paper. After measuring the temperatures of the water, the glass with the black paper around it should be hotter than the other. Lighter surfaces reflect more light, that's why people where lighter colored clothes in the summer, it keeps them cooler."
+})
+
+Material.create({
+  name:'Construction Paper',
+  info:'http://downloadicons.net/sites/default/files/paper-icon-23099.png',
+  experiment_id: Experiment.find_by(name: 'What Absorbs More Heat?').id
+  })
+
+Material.create({
+  name:'Rubber Bands',
+  info:'http://bsccongress.com/im25/rubber-band-clip-art.png',
+  experiment_id: Experiment.find_by(name: 'What Absorbs More Heat?').id
+  })
+
+Material.create({
+  name:'Drinking Glass',
+  info:'https://d30y9cdsu7xlg0.cloudfront.net/png/59406-200.png',
+  experiment_id: Experiment.find_by(name: 'What Absorbs More Heat?').id
+  })
+
+Material.create({
+  name:'Thermometer',
+  info:'http://www.hddfancontrol.com/assets/img/temperature-icon.png',
+  experiment_id: Experiment.find_by(name: 'What Absorbs More Heat?').id
+  })
+
+Experiment.create({
+  name:'Making Music with Water',
+  procedure:["Line a few drinking glasses up next to each other.","Fill each one with a different amount of water.","The first should have just a little water while the last should almost full, the ones in between should have slightly more than the last.","Hit the glass with the least amount of water and observe the sound, then hit the glass with the most water, which makes the higher sound?","Hit the other glasses and see what noise they make, see if you can get a tune going by hitting the glasses in a certain order."],
+  video_url:'https://www.youtube.com/watch?v=iFwtybB3R6Q' ,
+  rating:3.7,
+  discipline:'physics',
+  picture:'http://howtomakescienceprojectsforkids.com/wp-content/uploads/2013/08/How-To-Make-A-Water-Xylophone.jpg',
+  time: 0.5,
+  description:"Have you ever tried making music with glasses or bottles filled with water? I bet you favorite band hasn't. Experiment with your own special sounds by turning glasses of water into instruments, make some cool music and find out how it works.",
+  explanation:"Each of the glasses will have a different tone when hit with the pencil, the glass with the most water will have the lowest tone while the glass with the least water will have the highest. Small vibrations are made when you hit the glass, this creates sound waves which travel through the water. More water means slower vibrations and a deeper tone."
+})
+
+Material.create({
+  name:'Pencil',
+  info:'http://icons.iconarchive.com/icons/icons8/android/512/Editing-Pencil-icon.png',
+  experiment_id: Experiment.find_by(name: 'Making Music with Water').id
+  })
+
+Material.create({
+  name:'Drinking Glass',
+  info:'https://d30y9cdsu7xlg0.cloudfront.net/png/59406-200.png',
+  experiment_id: Experiment.find_by(name: 'Making Music with Water').id
+  })
+
+Material.create({
+  name:'Water',
+  info:'http://www.iconsdb.com/icons/preview/caribbean-blue/water-9-xxl.png',
+  experiment_id: Experiment.find_by(name: 'Making Music with Water').id
+  })
 # Comment.create({
 #   style:'text',
 #   body:'This experiment was awesome!',
