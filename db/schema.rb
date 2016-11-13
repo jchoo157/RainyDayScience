@@ -41,7 +41,7 @@ ActiveRecord::Schema.define(version: 20161113004301) do
   end
 
   create_table "materials", force: :cascade do |t|
-    t.string   "name"
+    t.string   "name" 
     t.text     "info"
     t.integer  "experiment_id"
     t.datetime "created_at",    null: false
